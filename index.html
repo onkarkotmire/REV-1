@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rev-1</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body id="root" style="display: flex; flex-direction: column; align-items: center; margin: 100px; border: 2px solid black;">
+    <script type="text/babel">
+        let container = React.createElement('div',null, 
+        <>
+        <h1>Topics Covered</h1>
+        <h3>The following is list of all topic we covered in MDN document</h3>
+        <br/>
+        <br/>
+        <a href="#">Getting Started with the web</a>
+        <p>Provides a practical information to web development for beginners</p>
+        <br/>
+        <br/>
+        <a href="#">Getting Started HTML technology</a>
+        <p>Getting started eith HTML and Provides a practical information to web development for beginners</p>
+        <br/>
+        <br/>
+        <a href="#">Getting Started CSS technology</a>
+        <p>Getting started With CSS and Provides a practical information to web development for beginners</p>
+        </>
+        )
+
+        ReactDOM.render(container, document.getElementById('root'))
+    </script>
+</body>
+</html>
